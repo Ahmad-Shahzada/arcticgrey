@@ -60,7 +60,7 @@ export default function HeroSection() {
 
                             {/* SHOPIFY PARTNER BADGE */}
                             <div className="w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center shrink-0 opacity-80 hover:opacity-100 transition-opacity">
-                                <img src="/public/images/shopify.avif" alt="Shopify" className="w-full object-contain" />
+                                <img src="/images/shopify.avif" alt="Shopify" className="w-full object-contain" />
                             </div>
                         </div>
                     </div>
@@ -147,7 +147,7 @@ export default function HeroSection() {
                                     <UpArrow /> {stat.up} improvement
                                 </div>
                             </div>
-                            <img src="/public/images/herowave.avif" className="w-24 sm:w-32 lg:w-40 opacity-40 group-hover:opacity-80 transition-opacity hue-rotate-[100deg]" alt="wave" />
+                            <img src="/images/herowave.avif" className="w-24 sm:w-32 lg:w-40 opacity-40 group-hover:opacity-80 transition-opacity hue-rotate-[100deg]" alt="wave" />
                         </div>
                     ))}
                 </div>
@@ -160,7 +160,7 @@ export default function HeroSection() {
                     {["review1", "review2", "review3", "4", "review5"].map((img, i) => (
                         <img
                             key={i}
-                            src={`/public/images/${img}.webp`}
+                            src={`/images/${img}.webp`}
                             className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
                             alt="partner"
                         />
