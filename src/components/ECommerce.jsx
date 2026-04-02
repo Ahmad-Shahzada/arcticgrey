@@ -32,7 +32,7 @@ const Ecommerece = () => {
                         ></div>
 
                         <img
-                            src="/public/images/ai-personalised.webp"
+                            src="/images/ai-personalised.webp"
                             alt="eCommerce Service Mockup"
                             className="relative z-10 w-full max-w-[320px] md:max-w-[500px] lg:max-w-[700px] h-auto object-contain drop-shadow-2xl"
                         />

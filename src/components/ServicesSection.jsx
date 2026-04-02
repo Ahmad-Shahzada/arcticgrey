@@ -20,10 +20,8 @@ const ServicesSection = () => {
 
             {/* --- Header Section --- */}
             <div className="flex flex-col items-center text-center mb-10 md:mb-16 relative">
-                {/* Adjusted top position for mobile so it doesn't overlap header as much */}
-                <img src="/public/images/elm.webp" className='w-24 md:w-32 mb-10 absolute -top-12 md:-top-20' alt="" />
+                <img src="/images/elm.webp" className='w-24 md:w-32 mb-10 absolute -top-12 md:-top-20' alt="" />
                 
-                {/* Reduced pt-32 to pt-24 for mobile */}
                 <p className="text-sm font-medium text-[#111111]/70 mb-4 pt-24 md:pt-32 tracking-tight">
                     Everything you need to sell, scale, and succeed
                 </p>
@@ -32,12 +30,9 @@ const ServicesSection = () => {
                 </h1>
             </div>
 
-            {/* --- Bottom Content Card (Row 1) --- */}
-            {/* Reduced p-20 to responsive p-8 md:p-20 */}
             <div className="bg-[#fbf7ec] border border-[#F1EFE9] rounded-2xl p-8 md:p-20 shadow-sm mb-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-                    {/* Left Column: Text Content */}
                     <div className="flex flex-col order-2 lg:order-1">
                         <h2 className="text-3xl md:text-[32px] text-[#111111] leading-[1.1] mb-6">
                             Build a <span className="relative inline-block">
@@ -50,7 +45,6 @@ const ServicesSection = () => {
                             Custom Shopify stores that are tailored for high performance, seamlessly integrate AI for continuous evolution, and deliver a lasting competitive advantage in eCommerce.
                         </p>
 
-                        {/* Feature List - Removed fixed mr-20 for mobile */}
                         <div className="space-y-0 mb-10 lg:mr-20 border-t border-black/10">
                             {features.map((item, index) => (
                                 <div key={index} className="flex items-center justify-between py-6 border-b border-black/10 last:border-0">
@@ -66,7 +60,6 @@ const ServicesSection = () => {
                         </button>
                     </div>
 
-                    {/* Right Column: Video */}
                     <div className="relative flex justify-center items-center order-1 lg:order-2">
                         <div className="w-full aspect-[4/5] md:aspect-square rounded-2xl overflow-hidden">
                             <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
@@ -78,11 +71,9 @@ const ServicesSection = () => {
                 </div>
             </div>
 
-            {/* --- Content Card (Row 2) --- */}
             <div className="bg-[#fcf9f1] border border-[#F1EFE9] rounded-2xl p-8 md:p-16 shadow-sm">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     
-                    {/* Video Column */}
                     <div className="relative group cursor-pointer order-1">
                         <div className="w-full aspect-square rounded-2xl overflow-hidden relative">
                             <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
@@ -91,7 +82,6 @@ const ServicesSection = () => {
                         </div>
                     </div>
 
-                    {/* Text Content Column - Adjusted mx-16 for mobile */}
                     <div className="flex flex-col md:px-4 lg:mx-16 order-2">
                         <h2 className="text-3xl md:text-[34px] lg:mr-28 text-[#111111] leading-[1.3] mb-6 font-semibold">
                             Complete Shopify Tasks Quickly

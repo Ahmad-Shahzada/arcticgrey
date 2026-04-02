@@ -26,28 +26,21 @@ export default function Ai_apps() {
   const logosToScroll = [...partners, ...partners];
 
   return (
-    /* Removed fixed margin 'mx-5' to prevent overflow on small screens, replaced with responsive padding */
     <div className='bg-[#fbf7ed] pt-6 md:pt-10 px-4 md:px-5'>
       <section className="min-h-screen w-full bg-black rounded-[14px] flex items-center justify-center p-6 md:p-12 lg:p-16 text-white antialiased overflow-hidden">
         <div className="w-full flex flex-col items-center">
-          
-          {/* Main Title - Responsive sizing */}
           <h1 className="text-3xl sm:text-4xl md:text-[45px] tracking-tight my-5 md:my-20 text-center font-bold">
             <span className="text-[#BF905E]">AI-Powered</span> Shopify Apps
           </h1>
 
-          {/* Card Grid - Stacked on mobile, 2 columns on tablet/desktop */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 lg:gap-16 w-full mb-16 md:mb-20">
             {cards.map((card, index) => (
               <div key={index} className="flex flex-col items-start bg-[#0D0D0D] md:p-10 rounded-[20px] md:rounded-[30px] border border-gray-900/50">
-                
-                {/* Responsive Image Container */}
                 <div className="w-full mb-8 md:mb-12 flex ">
                   <img src={card.image} alt={card.title} className="w-full h-auto max-w-[500px] object-contain" />
                 </div>
 
                 <div className="w-full lg:max-w-[500px] mb-8 md:mb-12">
-                  {/* Title max-width only applied on large screens to maintain original design */}
                   <h2 className="text-2xl md:text-[32px] lg:max-w-[300px] mb-4 md:mb-6 font-semibold leading-tight">
                     {card.title}
                   </h2>
@@ -55,8 +48,6 @@ export default function Ai_apps() {
                     {card.description}
                   </p>
                 </div>
-
-                {/* Footer Buttons - Responsive alignment */}
                 <div className="w-full flex flex-wrap items-center justify-start gap-4 md:gap-5 mt-auto">
                   <a href="#" className="border-2 border-yellow-600 hover:border-white py-2 md:py-3 px-4 md:px-5 rounded-full transition-all shrink-0">
                     <img 

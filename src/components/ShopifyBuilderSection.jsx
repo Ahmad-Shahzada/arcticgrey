@@ -8,18 +8,11 @@ const Icon = ({ path }) => (
 
 const ShopifyBuilderSection = () => {
     return (
-        /* Outer Section: Responsive horizontal margins and padding */
         <section className="mx-0 md:mx-5 bg-white px-4 md:px-10 lg:px-14 pt-10 pb-10">
-            
-            {/* Main Container: flex-col for mobile, flex-row for desktop */}
             <div className="w-full bg-white rounded-[24px] lg:rounded-[14px] flex flex-col lg:flex-row overflow-hidden border border-gray-100">
 
-                {/* LEFT SECTION (Dark Background + Stats Grid) */}
                 <div className="w-full lg:w-1/2 bg-[#0a0a0a] relative flex flex-col min-h-fit lg:min-h-[600px] overflow-hidden order-2 lg:order-1">
-
-                    {/* Stats Grid - "Crosshair" dividers optimized for mobile */}
                     <div className="relative z-10 grid grid-cols-2 pt-5 w-full">
-                        {/* Item 1 */}
                         <div className="p-6 md:p-10 border-b border-r border-gray-600/40 flex flex-row items-start justify-start gap-3 md:gap-4">
                             <div className="text-white flex-shrink-0 mt-1">
                                 <Icon path="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
@@ -32,7 +25,6 @@ const ShopifyBuilderSection = () => {
                             </div>
                         </div>
 
-                        {/* Item 2 */}
                         <div className="p-6 md:p-10 border-b border-gray-600/40 flex flex-row items-start justify-start gap-3 md:gap-4">
                             <div className="mt-1 flex-shrink-0 text-white">
                                 <Icon path="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -44,8 +36,6 @@ const ShopifyBuilderSection = () => {
                                 </p>
                             </div>
                         </div>
-
-                        {/* Item 3 */}
                         <div className="p-6 md:p-10 border-r border-gray-600/40 flex flex-row items-start justify-start gap-3 md:gap-4">
                             <div className="mt-1 flex-shrink-0 text-white">
                                 <Icon path="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.976-2.888a1 1 0 00-1.175 0l-3.976 2.888c-.784.57-1.838-.197-1.539-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
@@ -57,8 +47,6 @@ const ShopifyBuilderSection = () => {
                                 </p>
                             </div>
                         </div>
-
-                        {/* Item 4 */}
                         <div className="p-6 md:p-10 flex flex-row items-start justify-start gap-3 md:gap-4">
                             <div className="mt-1 flex-shrink-0 text-white">
                                 <Icon path="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -72,19 +60,16 @@ const ShopifyBuilderSection = () => {
                         </div>
                     </div>
 
-                    {/* Bottom Graphics Section */}
                     <div className="relative w-full h-[200px] md:h-[300px] flex items-end justify-center px-4">
                         <div className="relative transform translate-y-4 md:translate-y-8 w-full max-w-[400px] lg:max-w-none">
                             <img
-                                src="/public/images/ai-counter-image.webp"
+                                src="/images/ai-counter-image.webp"
                                 alt="Shopify Dashboard Graphics"
                                 className="w-full h-auto object-contain"
                             />
                         </div>
                     </div>
                 </div>
-
-                {/* RIGHT SECTION (Text Content) */}
                 <div className="w-full lg:w-1/2 p-5 md:p-12 lg:px-20 xl:px-24 flex flex-col justify-center bg-[#FDF9F3] order-1 lg:order-2">
                     <h1 className="text-2xl md:text-4xl leading-tight text-black mb-4 md:mb-6 text-left">
                         <span className='font-bold'>Build</span> Your Custom <span className='font-bold'>Shopify Store</span>

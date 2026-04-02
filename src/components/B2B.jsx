@@ -14,15 +14,11 @@ const B2b = () => {
     ];
 
     return (
-        /* Outer Section: Mobile handles padding with px-4, Big screen restores px-14 exactly */
         <section className="bg-white lg:mx-5 px-4 py-10 md:px-10 lg:px-14">
 
-            {/* Main Container: Grid layout ensures 50/50 split on big screens */}
             <div className="relative grid min-h-fit grid-cols-1 items-center overflow-hidden rounded-3xl bg-black text-white lg:min-h-[700px] lg:grid-cols-2 lg:rounded-xl">
 
-                {/* --- IMAGE SIDE: Appears FIRST on mobile (order-1), SECOND on big screen (lg:order-2) --- */}
                 <div className="relative order-1 flex items-center justify-center p-8 md:p-12 lg:order-2 lg:justify-start ">
-                    {/* Golden Glow Effect */}
                     <div
                         className="absolute h-[60%] w-[60%] rounded-full opacity-20 blur-[80px] md:blur-[150px]"
                         style={{ background: goldGradient }}
@@ -35,8 +31,6 @@ const B2b = () => {
                     />
                 </div>
 
-                {/* --- CONTENT SIDE: Appears SECOND on mobile (order-2), FIRST on big screen (lg:order-1) --- */}
-                {/* Big screen: Restores your exact px-14 and space-y-10 alignment */}
                 <div className="z-10 order-2 flex flex-col items-center p-5 sm:p-12 lg:order-1 lg:items-start lg:p-24 lg:pl-20 text-left">
 
                     <div className="space-y-6 lg:pr-20">
@@ -55,7 +49,6 @@ const B2b = () => {
                         </p>
                     </div>
 
-                    {/* Interactive Feature Tabs: Big screen restores exact pl-10/ml-10 feel */}
                     <div className="mt-10 w-full max-w-md text-left">
                         {features.map((feature, index) => {
                             const isHighlighted = activeTab === index || hoveredTab === index;
@@ -81,7 +74,6 @@ const B2b = () => {
                         })}
                     </div>
 
-                    {/* Button: Big screen restores your exact padding/margin */}
                     <div className="mt-10 w-full sm:w-auto">
                         <div
                             style={{ backgroundImage: goldGradient }}

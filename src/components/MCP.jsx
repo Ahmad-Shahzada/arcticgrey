@@ -21,13 +21,10 @@ const RevenueIcon = () => (
 
 const MCP = () => {
     return (
-        /* Outer Section: Mobile pe padding kam, Desktop pe px-14 exactly */
         <div className="mx-0 md:mx-5 bg-white py-4 px-4 md:px-10 lg:px-14">
-            {/* Inner Container */}
             <section className="">
                 <div className="bg-[#FAF7F0] px-2 md:px-5 rounded-[24px] lg:rounded-[14px] overflow-hidden grid grid-cols-1 lg:grid-cols-2 items-center">
 
-                    {/* --- IMAGE SIDE (Order-1 on mobile) --- */}
                     <div className="w-full flex items-center justify-center p-6 md:p-12 lg:p-0 order-1 lg:order-2">
                         <img
                             src="/public/images/mcp-image0.webp"
@@ -36,7 +33,6 @@ const MCP = () => {
                         />
                     </div>
 
-                    {/* --- CONTENT SIDE (Order-2 on mobile) --- */}
                     <div className="p-5 md:p-12 lg:px-20 lg:py-20 flex flex-col justify-center order-2 lg:order-1 items-center lg:items-start text-left">
                         <div className="space-y-4">
                             <h2 className="text-2xl md:text-4xl lg:text-4xl text-zinc-900 leading-[1.2] lg:leading-[1.1]">
@@ -47,14 +43,11 @@ const MCP = () => {
                             </p>
                         </div>
 
-                        {/* Feature List */}
                         <div className="mt-8 w-full max-w-md divide-y divide-zinc-200 border-t border-zinc-200">
                             <FeatureRow Icon={ConsultationIcon} title="End-to-End Consultation" />
                             <FeatureRow Icon={SupportIcon} title="Full Lifecycle Support" />
                             <FeatureRow Icon={RevenueIcon} title="Revenue Generation" />
                         </div>
-
-                        {/* Button: Mobile pe w-full, Desktop pe auto */}
                         <div className="mt-10 w-full sm:w-auto">
                             <button className="w-full sm:w-auto bg-black text-white px-8 lg:px-10 py-4 rounded-full font-semibold flex items-center justify-center gap-3 hover:bg-zinc-800 transition-all group shadow-md active:scale-95 text-sm md:text-base">
                                 MCP Integration For $595
@@ -70,12 +63,10 @@ const MCP = () => {
 
 const FeatureRow = ({ Icon, title }) => (
     <div className="flex items-center justify-between py-4 md:py-6 group cursor-pointer hover:bg-black/[0.02] transition-colors rounded-sm lg:px-4 text-left">
-        {/* Title stays on the left */}
         <span className="text-base md:text-xl font-medium text-zinc-900 group-hover:text-black transition-colors">
             {title}
         </span>
 
-        {/* Icon pushed to the right side */}
         <div className="text-zinc-800 flex items-center justify-center transition-transform group-hover:translate-x-1 shrink-0">
             <Icon />
         </div>

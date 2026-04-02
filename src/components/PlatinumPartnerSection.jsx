@@ -27,55 +27,55 @@ export default function PlatinumPartnerSection() {
         {
             name: 'Brooke Sanderson',
             role: 'Merchant Success Director',
-            image: '/public/images/human-1.webp',
+            image: '/images/human-1.webp',
             bg: 'bg-[#FAF8F5]', // Faded beige BG for Brooke
         },
         {
             name: 'Jake Amos',
             role: 'Co-Founder',
-            image: '/public/images/human-2.webp',
+            image: '/images/human-2.webp',
             bg: 'bg-white', // Pure white BG for others
         },
         {
             name: 'Truc Peter',
             role: 'Senior Account Executive',
-            image: 'public/images/human-3.webp',
+            image: '/images/human-3.webp',
             bg: 'bg-white',
         },
         {
             name: 'Brooke Sanderson',
             role: 'Merchant Success Director',
-            image: '/public/images/human-1.webp',
+            image: '/images/human-1.webp',
             bg: 'bg-[#FAF8F5]', // Faded beige BG for Brooke
         },
         {
             name: 'Jake Amos',
             role: 'Co-Founder',
-            image: '/public/images/human-2.webp',
+            image: '/images/human-2.webp',
             bg: 'bg-white', // Pure white BG for others
         },
         {
             name: 'Truc Peter',
             role: 'Senior Account Executive',
-            image: 'public/images/human-3.webp',
+            image: '/images/human-3.webp',
             bg: 'bg-white',
         },
         {
             name: 'Brooke Sanderson',
             role: 'Merchant Success Director',
-            image: '/public/images/human-1.webp',
+            image: '/images/human-1.webp',
             bg: 'bg-[#FAF8F5]', // Faded beige BG for Brooke
         },
         {
             name: 'Jake Amos',
             role: 'Co-Founder',
-            image: '/public/images/human-2.webp',
+            image: '/images/human-2.webp',
             bg: 'bg-white', // Pure white BG for others
         },
         {
             name: 'Truc Peter',
             role: 'Senior Account Executive',
-            image: 'public/images/human-3.webp',
+            image: '/images/human-3.webp',
             bg: 'bg-white',
         },
     ];
@@ -185,7 +185,7 @@ export default function PlatinumPartnerSection() {
 
                 <div
                     className="absolute bottom-0 left-0 w-full h-[120px] sm:h-[160px] md:h-[200px] bg-no-repeat bg-bottom bg-contain md:bg-cover pointer-events-none opacity-60 md:opacity-100"
-                    style={{ backgroundImage: "url('/public/images/text-bg.webp')" }}
+                    style={{ backgroundImage: "url('/images/text-bg.webp')" }}
                     aria-hidden="true"
                 />
 

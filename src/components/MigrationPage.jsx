@@ -43,7 +43,6 @@ const platforms = [
 const MigrationPage = () => {
   const [selectedPlatform, setSelectedPlatform] = useState(null);
 
-  // Custom Gold Gradient Style
   const goldGradient = "linear-gradient(90deg, #f7d379, #e9be65, #f5e583, #c89447, #dcab57, #d6a453, #f7d87b, #a57331, #c18d42)";
 
   const progressPercentage = selectedPlatform ? 35 : 80;
@@ -51,13 +50,10 @@ const MigrationPage = () => {
   return (
     <div className='mx-0 sm:mx-5 px-3 md:px-8 lg:px-16 pb-5 bg-white'>
       
-      {/* Container: Changed md:p-24 to responsive padding */}
       <div className="min-h-screen bg-black rounded-2xl md:rounded-xl text-white p-6 md:p-12 lg:p-24 font-sans flex items-center justify-center relative overflow-hidden">
-        {/* <BackgroundWaves /> */}
 
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full z-10">
 
-          {/* LEFT SIDE: Text Content */}
           <div className="space-y-5 text-left order-2 lg:order-1">
             <h1 className="text-3xl md:text-4xl  font-light leading-[1.15]">
               <span className="font-semibold italic">Seamless</span>{' '}

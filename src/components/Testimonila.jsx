@@ -4,7 +4,7 @@ const testimonialData = [
   {
     id: 1,
     brandLogo: "/images/blogo1.webp",
-    videoPoster: "/public/vidio/vidio-1.mp4",  // Fixed path: removed /public prefix
+    videoPoster: "/vidio/vidio-1.mp4",  // Fixed path: removed /public prefix
     stat: "34%",
     statLabel: "Sales Increase in 6 Months",
     quote: "Arctic Gray has been instrumental in enhancing user experience, increasing conversion rates, and providing essential backend development support that has propelled our business growth.",
@@ -14,7 +14,7 @@ const testimonialData = [
   {
     id: 2,
     brandLogo: "/images/blogo2.webp",
-    videoPoster: "/public/vidio/vidio-2.mp4",  // Add your second video here
+    videoPoster: "/vidio/vidio-2.mp4",  // Add your second video here
     stat: "22%",
     statLabel: "Increase in Retention",
     quote: "The team's attention to detail and ability to scale our Shopify operations was truly impressive. They are a core part of our digital strategy.",

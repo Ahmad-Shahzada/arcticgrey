@@ -14,7 +14,6 @@ const POSSection = () => {
   ];
 
   return (
-    // Responsive outer margins and padding
     <section className="mx-0 md:mx-5 px-4 md:px-10 lg:px-10 pb-5 bg-white">
       <div className="min-h-screen bg-black rounded-3xl text-white p-6 md:p-12 lg:p-20 font-sans flex flex-col lg:flex-row items-center justify-between relative overflow-hidden">
 
@@ -88,7 +87,7 @@ const POSSection = () => {
         {/* Right Image Side */}
         <div className="w-full lg:w-1/2 relative flex justify-center items-center order-1 lg:order-2">
           <img
-            src="/public/images/seeamleass-right.webp"
+            src="/images/seeamleass-right.webp"
             alt="Shopify POS Mockup"
             className="relative z-10 w-[85%] sm:w-[70%] lg:w-full max-w-[650px] object-contain drop-shadow-2xl"
           />

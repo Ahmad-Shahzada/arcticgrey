@@ -21,15 +21,11 @@ const BulkHoursChat = () => {
     <div className='mx-5 bg-[#fbf7ed] pt-10'>
       <div className="relative rounded-[14px] rounded-br rounded-bl bg-black flex flex-col items-center justify-center px-6 py-20 font-sans overflow-hidden">
 
-        {/* Background Golden Mesh Image */}
-        {/* Replace the URL with your actual transparent PNG of the golden mesh */}
         <div
           className="absolute bottom-0 left-0 w-full h-[800px] bg-no-repeat bg-bottom bg-contain opacity-90 pointer-events-none"
-          style={{ backgroundImage: "url('/public/images/foot-bg.webp')" }}
+          style={{ backgroundImage: "url('/images/foot-bg.webp')" }}
           aria-hidden="true"
         />
-
-        {/* Top Header Text */}
         <div className="relative z-10 text-center max-w-4xl mb-12">
           <h1 className="text-4xl md:text-5xl font-medium text-white mb-6 leading-tight tracking-tight">
             Complete Shopify Tasks Quickly <br />
@@ -40,13 +36,8 @@ const BulkHoursChat = () => {
             terms of what you’d like to build in this chat box, and we will give you an estimate of hours in real time.
           </p>
         </div>
-
-        {/* Main Chat Interface Box */}
         <div className="relative z-10 w-full max-w-[850px] bg-[#0d0d0d] border border-[#272727] rounded-[24px] p-8 md:p-14 shadow-2xl flex flex-col items-center">
-
-          {/* Logo Section */}
           <div className="flex items-center space-x-3 mb-8">
-            {/* Simple SVG approximation of the Arctic Grey logo */}
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L22 20H2L12 2Z" stroke="#e8b959" strokeWidth="2.5" strokeLinejoin="round" />
               <path d="M12 10L17 19H7L12 10Z" fill="#e8b959" />
@@ -55,13 +46,9 @@ const BulkHoursChat = () => {
               Arctic Grey
             </span>
           </div>
-
-          {/* Golden Progress/Divider Line */}
           <div className="w-full max-w-[500px] h-[4px] bg-[#1f1f1f] rounded-full mb-10 overflow-hidden flex">
             <div className="h-full w-[45%] bg-gradient-to-r from-[#ffe082] via-[#e8b959] to-[#9c7722] rounded-full"></div>
           </div>
-
-          {/* AI Prompt Examples */}
           <div className="text-center mb-8">
             <p className="font-semibold text-white mb-3 text-sm md:text-base">
               Ask AI anything, for example:
@@ -70,8 +57,6 @@ const BulkHoursChat = () => {
               If I need emergency fixes and general tech support for.
             </p>
           </div>
-
-          {/* Input Bar */}
           <div className="w-full flex flex-col md:flex-row items-center bg-[#1a1a1a] border border-[#333333] rounded-xl p-2 pl-5 transition-all focus-within:border-[#555555]">
             <input
               type="text"
@@ -87,10 +72,7 @@ const BulkHoursChat = () => {
 
       </div>
       <div className="relative bg-black text-white font-sans overflow-hidden flex flex-col">
-
-        {/* Top Navigation Bar */}
         <header className="flex items-center justify-between px-14 py-5 border-b border-[#1f1f1f] z-20 bg-black/50 backdrop-blur-md">
-          {/* Logo Area */}
           <div className="flex items-center space-x-2">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L22 20H2L12 2Z" stroke="white" strokeWidth="2.5" strokeLinejoin="round" />
@@ -104,7 +86,6 @@ const BulkHoursChat = () => {
             Los Angeles - New York - Chicago - Seattle - Toronto - Boston - London - Washington D.C.
           </div>
 
-          {/* We're Hiring */}
           <div className="flex items-center space-x-2 cursor-pointer group">
             <svg className="w-5 h-5 text-white group-hover:text-[#e8b959] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path>
@@ -113,25 +94,17 @@ const BulkHoursChat = () => {
           </div>
         </header>
 
-        {/* Main Content Area */}
         <main className="relative flex-1 flex flex-col items-center py-20 px-4 z-10">
-
-          {/* Background Radial Glow */}
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#d4af37] opacity-[0.08] blur-[100px] rounded-full pointer-events-none -z-10"></div>
-
-          {/* Section Title */}
           <h2 className="text-3xl font-bold mb-12 tracking-wide">
             Select a Service
           </h2>
-
-          {/* 5-Column Grid */}
           <div className="w-full max-w-[1400px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
             {services.map((service, index) => (
               <button
                 key={index}
                 className="group relative flex items-center justify-center text-center px-4 py-5 bg-[#111111] hover:bg-[#1a1a1a] border border-[#262626] hover:border-[#404040] rounded-xl transition-all duration-300 ease-in-out overflow-hidden"
               >
-                {/* Subtle top highlight on hover for that premium feel */}
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                 <span className="text-sm md:text-[14px] font-medium text-[#e5e5e5] group-hover:text-white transition-colors">
@@ -142,8 +115,6 @@ const BulkHoursChat = () => {
           </div>
 
         </main>
-
-        {/* Bottom Border to match the visual framing */}
         <div className="w-full h-[1px] bg-[#1f1f1f] mt-auto"></div>
       </div>
       <footer className="relative bg-black text-white font-sans overflow-hidden">

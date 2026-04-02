@@ -7,17 +7,17 @@ const UpArrow = () => (
 );
 const PortfolioShowcase = () => {
     const desktopImages = [
-        "/public/images/desktop_1.webp",
-        "/public/images/desktop_2.webp",
-        "/public/images/desktop_3.webp",
-        "/public/images/desktop_4.webp",
-        "/public/images/desktop_5.webp",
-        "/public/images/desktop_6.webp",
+        "/images/desktop_1.webp",
+        "/images/desktop_2.webp",
+        "/images/desktop_3.webp",
+        "/images/desktop_4.webp",
+        "/images/desktop_5.webp",
+        "/images/desktop_6.webp",
     ];
 
     const mobileImages = [
-        "/public/images/mobile_2.webp",
-        "/public/images/mobile_3.avif",
+        "/images/mobile_2.webp",
+        "/images/mobile_3.avif",
         "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=300&auto=format&fit=crop",
         "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=300&auto=format&fit=crop",
         "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=300&auto=format&fit=crop",
@@ -93,7 +93,7 @@ const PortfolioShowcase = () => {
                         <div className="flex flex-col md:flex-row items-center justify-between gap-6 bg-zinc-950/50 rounded-[32px] border border-white/5 shadow-2xl">
                             <div className="flex items-center gap-6">
                                 <div className="">
-                                    <img src="/public/images/even.webp" className=' rounded-xl' alt="" />
+                                    <img src="/images/even.webp" className=' rounded-xl' alt="" />
                                 </div>
                                 <p className="hidden xl:block text-sm text-gray-300 font-light leading-snug max-w-md">
                                     Get your free Shopify Test Drive, and let us show you a glimpse of what we can do for you, <span className="text-white font-medium">100% risk free.</span>
@@ -145,7 +145,7 @@ const PortfolioShowcase = () => {
                                     <UpArrow /> {stat.up} improvement
                                 </div>
                             </div>
-                            <img src="/public/images/herowave.avif" className="w-24 sm:w-32 lg:w-40 opacity-60 group-hover:opacity-100 transition-opacity" alt="wave" />
+                            <img src="/images/herowave.avif" className="w-24 sm:w-32 lg:w-40 opacity-60 group-hover:opacity-100 transition-opacity" alt="wave" />
                         </div>
                     ))}
                 </div>

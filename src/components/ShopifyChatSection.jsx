@@ -13,10 +13,8 @@ const ShopifyChatSection = () => {
   return (
     <section className="mx-0 md:mx-5 bg-white px-4 md:px-10 lg:px-14 py-8 md:py-12">
       
-      {/* Main Container */}
       <div className="flex flex-col lg:flex-row rounded-[24px] lg:rounded-[14px] overflow-hidden min-h-fit lg:min-h-[700px] shadow-sm">
         
-        {/* --- LEFT SIDE: CONTENT (Now order-2 on mobile) --- */}
         <div className="w-full lg:w-1/2 bg-[#FAF7F0] p-8 md:p-16 lg:p-24 flex flex-col justify-center items-center lg:items-start text-left order-2 lg:order-1">
           <div className="space-y-4 md:space-y-6">
             <h2 className="text-2xl md:text-4xl text-black leading-[1.2] lg:leading-[1.15] tracking-tight">

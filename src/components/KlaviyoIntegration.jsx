@@ -3,11 +3,11 @@ import { Database, BadgeCheck, TrendingUp, ArrowRight } from 'lucide-react';
 
 const KlaviyoIntegration = () => {
   const scrollImages = [
-    "/public/images/kalviyo-1.avif",
-    "/public/images/kalviyo-2.avif",
-    "/public/images/kalviyo-3.avif",
-    "/public/images/kalviyo-4.avif",
-    "/public/images/kalviyo-5.avif",
+    "/images/kalviyo-1.avif",
+    "/images/kalviyo-2.avif",
+    "/images/kalviyo-3.avif",
+    "/images/kalviyo-4.avif",
+    "/images/kalviyo-5.avif",
   ];
 
   const rightBgColor = "#F2EEE3"; 

@@ -21,13 +21,10 @@ const RevenueIcon = () => (
 
 const TestingData = () => {
   return (
-    // Adjusted outer padding for mobile (px-4) vs desktop (px-14)
     <div className="mx-0 md:mx-5 bg-white py-10 md:py-16 px-4 md:px-10 lg:px-14">
       <section className="max-w-[1600px] mx-auto">
         <div className="bg-[#FAF7F0] rounded-[20px] md:rounded-[15px] overflow-hidden grid grid-cols-1 lg:grid-cols-2 items-center">
 
-          {/* --- LEFT SIDE: IMAGE --- */}
-          {/* order-1 on mobile to stay on top, p-6 for spacing on small screens */}
           <div className="w-full flex items-center justify-center p-6 md:p-10 lg:pl-10 order-1">
             <img
               src="/images/testingdata.webp"
@@ -36,8 +33,6 @@ const TestingData = () => {
             />
           </div>
 
-          {/* --- RIGHT SIDE: CONTENT --- */}
-          {/* ml-0 on mobile, ml-20 on desktop. text-center on mobile, text-left on desktop */}
           <div className="px-6 pb-12 pt-4 md:px-12 lg:pr-20 lg:py-20 flex flex-col justify-center lg:ml-10 xl:ml-20 max-w-xl mx-auto lg:mx-0 text-left order-2">
             <div className="space-y-4 md:space-y-6">
               <h2 className="text-[26px] sm:text-2xl md:text-4xl text-zinc-900 leading-tight lg:leading-[1.1] sm:whitespace-normal">
@@ -49,14 +44,12 @@ const TestingData = () => {
               </p>
             </div>
 
-            {/* Feature List - Text stays left-aligned for better readability in rows */}
             <div className="mt-8 md:mt-10 divide-y divide-zinc-200 border-t border-zinc-200 text-left">
               <FeatureRow Icon={ConsultationIcon} title="Strategize, Design, Develop, Deploy" />
               <FeatureRow Icon={SupportIcon} title="Exclusively Plus Certified" />
               <FeatureRow Icon={RevenueIcon} title="In-Depth Analytics" />
             </div>
 
-            {/* CTA Button - Full width on tiny mobile, auto on desktop */}
             <div className="mt-8 md:mt-10 flex justify-center lg:justify-start">
               <button className="w-full sm:w-auto bg-black text-white px-8 md:px-12 hover:border-yellow-500 py-4 md:py-5 rounded-full font-semibold flex items-center justify-center gap-3 hover:bg-zinc-800 transition-all group shadow-md active:scale-95">
                 Start the A/B Test Drive

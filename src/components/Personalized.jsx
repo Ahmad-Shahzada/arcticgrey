@@ -14,27 +14,19 @@ const Personalized = () => {
     ];
 
     return (
-        /* Outer Section: Mobile pe horizontal margin remove kar di for full-width feel */
         <section className="mx-0 md:mx-5 bg-white pt-10">
-
-            {/* Main Black Container: Responsive rounded corners and height */}
             <div className="bg-black rounded-[24px] lg:rounded-[14px] text-white overflow-hidden relative min-h-fit lg:min-h-[700px] flex items-center mx-4 md:mx-0">
 
-                {/* Grid Layout: Desktop pe 2 columns, Mobile pe stacked (Column-reverse layout check order) */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 w-full px-6 py-12 md:px-16 lg:py-20 items-center">
 
-                    {/* --- IMAGE SIDE --- */}
-                    {/* Mobile pe Image niche (order-2), Desktop pe left (lg:order-1) */}
                     <div className="relative flex justify-center items-center order-2 lg:order-1">
                         <img
-                            src="/public/images/ai-agent-main.webp"
+                            src="/images/ai-agent-main.webp"
                             alt="eCommerce Service Mockup"
                             className="relative z-10 w-full max-w-[300px] md:max-w-[500px] lg:max-w-[700px] h-auto object-contain drop-shadow-2xl"
                         />
                     </div>
 
-                    {/* --- CONTENT SIDE --- */}
-                    {/* Mobile pe text centered, Desktop pe left-aligned (ml-0 for mobile) */}
                     <div className="flex flex-col space-y-8 md:space-y-10 z-10 order-1 lg:order-2 lg:ml-10 text-left items-center lg:items-start">
                         
                         <div className="space-y-4 md:space-y-6">
@@ -49,7 +41,6 @@ const Personalized = () => {
                             </p>
                         </div>
 
-                        {/* Interactive Feature Tabs */}
                         <div className="w-full max-w-lg text-left">
                             {features.map((feature, index) => {
                                 const isHighlighted = activeTab === index || hoveredTab === index;
@@ -74,8 +65,6 @@ const Personalized = () => {
                                 );
                             })}
                         </div>
-
-                        {/* CTA Button: Mobile pe centered aur flexible size */}
                         <div className="pt-4 md:pt-8 w-full sm:w-auto">
                             <div
                                 style={{ backgroundImage: goldGradient }}

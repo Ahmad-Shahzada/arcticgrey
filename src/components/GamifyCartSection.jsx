@@ -30,7 +30,7 @@ const GamifyCartSection = () => {
               loop
               playsInline
               className="w-full h-full object-cover"
-              src="/public/vidio/drawer.mp4"
+              src="/vidio/drawer.mp4"
             />
           </div>
         </div>

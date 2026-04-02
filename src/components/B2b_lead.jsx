@@ -23,10 +23,7 @@ const B2b_lead = () => {
   return (
     <div className="mx-0 md:mx-5">
       <section className="mx-auto w-full bg-white py-8 md:py-12 px-4 md:px-10 lg:px-14">
-        {/* Grid: 1 column on mobile, 2 on lg screens */}
         <div className="bg-[#FAF7F0] rounded-[14px] overflow-hidden grid grid-cols-1 lg:grid-cols-2 items-center min-h-fit lg:min-h-[600px]">
-
-          {/* LEFT SIDE: IMAGE (Order-1 on mobile) */}
           <div className="w-full h-full flex items-center justify-center p-8 md:p-12 lg:px-16 order-1 lg:order-1">
             <img
               src="/images/b2b_lead.webp"
@@ -35,10 +32,8 @@ const B2b_lead = () => {
             />
           </div>
 
-          {/* RIGHT SIDE: CONTENT (Order-2 on mobile) */}
           <div className="p-5 md:p-16 lg:p-24 flex flex-col justify-center order-2 lg:order-2 items-center lg:items-start text-left">
             <div className="space-y-4 md:space-y-6 max-w-lg">
-              {/* Headline: Small font + whitespace-nowrap for mobile single line */}
               <h2 className="text-[20px] sm:text-3xl md:text-4xl text-zinc-900 leading-[1.1] tracking-tight sm:whitespace-normal">
                 Why <span className="font-bold border-b-2 md:border-b-4 border-black/5">B2B</span> Leads The Way
               </h2>
@@ -47,14 +42,12 @@ const B2b_lead = () => {
               </p>
             </div>
 
-            {/* Feature List */}
             <div className="mt-8 md:mt-10 divide-y divide-zinc-200 border-t border-zinc-200 w-full max-w-md">
               <FeatureRow Icon={ConsultationIcon} title="End-to-End Consultation" />
               <FeatureRow Icon={SupportIcon} title="Full Lifecycle Support" />
               <FeatureRow Icon={RevenueIcon} title="Revenue Generation" />
             </div>
 
-            {/* CTA Button */}
             <div className="mt-8 md:mt-10 w-full sm:w-auto">
               <button className="bg-black text-white px-8 md:px-10 py-4 md:py-5 rounded-full font-bold flex items-center justify-center gap-3 hover:bg-zinc-800 transition-all group shadow-xl active:scale-95 text-[12px] md:text-sm uppercase tracking-widest w-full sm:w-auto">
                 Explore Features

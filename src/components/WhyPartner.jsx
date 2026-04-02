@@ -21,27 +21,23 @@ const WhyPartner = () => {
     const scrollingBrands = [...brands, ...brands];
 
     const trustLogos = [
-        { id: 1, src: '/public/images/review-1.svg', alt: 'Shopify Reviews' },
-        { id: 2, src: '/public/images/review-2.svg', alt: 'Shopify Plus Reviews' },
-        { id: 3, src: '/public/images/review-3.svg', alt: 'Google Reviews' },
-        { id: 4, src: '/public/images/review-4.svg', alt: 'Trustpilot Reviews' },
-        { id: 5, src: '/public/images/review-5.svg', alt: 'Clutch Reviews' },
-        { id: 6, src: '/public/images/review-6.svg', alt: 'Shopify Certified Partners' },
+        { id: 1, src: '/images/review-1.svg', alt: 'Shopify Reviews' },
+        { id: 2, src: '/images/review-2.svg', alt: 'Shopify Plus Reviews' },
+        { id: 3, src: '/images/review-3.svg', alt: 'Google Reviews' },
+        { id: 4, src: '/images/review-4.svg', alt: 'Trustpilot Reviews' },
+        { id: 5, src: '/images/review-5.svg', alt: 'Clutch Reviews' },
+        { id: 6, src: '/images/review-6.svg', alt: 'Shopify Certified Partners' },
     ];
 
     return (
         <>
-            {/* Main Section Wrapper */}
             <div className='px-4 md:px-5 bg-[#fbf7ed] pt-10'>
                 <section className="w-full bg-white py-12 md:py-20 rounded-[14px] flex items-center justify-center px-6 md:px-12 lg:px-16 antialiased overflow-hidden relative">
-                    
-                    {/* Background Decorative Circles - Hidden on small mobile for cleaner look */}
                     <div className="hidden sm:block absolute left-[-180px] bottom-[-220px] w-[500px] h-[500px] border-t-2 border-l-2 border-[#E3D1B4] rounded-full z-0 pointer-events-none"></div>
                     <div className="hidden sm:block absolute left-[-230px] bottom-[-280px] w-[600px] h-[600px] border-t-2 border-l-2 border-[#F1E5D5] rounded-full z-0 opacity-60 pointer-events-none"></div>
 
                     <div className="w-full grid grid-cols-1 lg:grid-cols-[1fr,auto,1fr] gap-x-8 xl:gap-x-16 gap-y-12 lg:gap-y-0 relative max-w-[1400px]">
 
-                        {/* COLUMN 1: LEFT TEXT */}
                         <div className="flex flex-col gap-4 md:gap-6 m-4 max-w-full lg:max-w-[380px] relative z-10 text-left tems-start">
                             <h2 className="text-black font-medium leading-[1.1] text-2xl md:text-4xl tracking-tighter">
                                 Why Partner <br />with Arctic Grey?
@@ -49,11 +45,9 @@ const WhyPartner = () => {
                             <p className="text-[#333333] font-normal leading-relaxed text-base md:text-lg tracking-normal">
                                 Partner with Arctic Grey to ensure your store evolves with AI, maintaining a competitive edge in the ever-changing eCommerce landscape.
                             </p>
-                            {/* Decorative Sparkles */}
                             <div className="hidden lg:block absolute left-0 bottom-[-50px] text-gray-300 opacity-60 text-2xl">✦</div>
                         </div>
 
-                        {/* COLUMN 2: CENTRAL GRAPHIC */}
                         <div className="relative flex justify-center w-[180px] sm:w-[220px] md:w-[300px] aspect-[9/14] md:aspect-[9/16] border border-gray-100/50 rounded-2xl overflow-hidden shadow-2xl z-10 mx-auto">
                             <img
                                 src={centralGraphic}

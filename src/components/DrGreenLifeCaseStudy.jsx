@@ -10,24 +10,24 @@ import 'swiper/css/navigation';
 export default function DrGreenLifeCaseStudy() {
     const slides = [
         {
-            image: '/public/images/scroll-1.webp',
-            video: '/public/vidio/scroll-1.mp4',
+            image: '/images/scroll-1.webp',
+            video: '/vidio/scroll-1.mp4',
             headline: <>An iconic <span className="font-bold">Shopify Store</span> designed and built for <span className="font-bold">Green Life Organics</span></>,
             testimonial: "“Our customers were given the opportunity to embark on an unforgettable journey, forming meaningful connections with beloved characters and creating a truly one-of-a-kind shopping experience.”",
             author: "Andy Bert",
             role: "Founder & CEO, Tired Mama",
-            avatar: "/public/images/Green_Life_medium.webp",
-            apps: ['/public/images/shopify-logo-slide_1024x1024.svg', '/public/images/smartrr_1024x1024.svg']
+            avatar: "/images/Green_Life_medium.webp",
+            apps: ['/images/shopify-logo-slide_1024x1024.svg', '/images/smartrr_1024x1024.svg']
         },
         {
-            image: '/public/images/scroll-1.webp', 
-            video: '/public/vidio/scroll-1.mp4',
+            image: '/images/scroll-1.webp', 
+            video: '/vidio/scroll-1.mp4',
             headline: <>A modern <span className="font-bold">E-commerce</span> experience for <span className="font-bold">Organic Living</span></>,
             testimonial: "“The new design significantly increased our conversion rate and improved user engagement across all devices.”",
             author: "Sarah Jenkins",
             role: "Marketing Director",
-            avatar: "/public/images/Green_Life_medium.webp",
-            apps: ['/public/images/shopify-logo-slide_1024x1024.svg']
+            avatar: "/images/Green_Life_medium.webp",
+            apps: ['/images/shopify-logo-slide_1024x1024.svg']
         }
     ];
 
