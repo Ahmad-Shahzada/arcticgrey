@@ -26,7 +26,7 @@ export default function Header() {
           {/* Left: Logo */}
           <div className="flex items-center font-semibold tracking-wide shrink-0">
             <Link to="/">
-              <img src="/public/images/lock-main-logo.webp" className='w-[200px]' alt="Logo" />
+              <img src="/images/lock-main-logo.webp" className='w-[200px]' alt="Logo" />
             </Link>
           </div>
 
