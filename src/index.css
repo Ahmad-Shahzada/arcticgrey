@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this to index.css */
+.nav-gradient-hover:hover {
+  border-bottom: 2px solid;
+  border-image-source: linear-gradient(90deg, #f7d379, #e9be65 13.02%, #f5e583 23.44%, #c89447 38.8%, #dcab57 46.06%, #d6a453 54.62%, #f7d87b 63.95%, #a57331 73.55%, #c18d42 83.41%, #c08a41);
+  border-image-slice: 1;
+}
+
+.bg-gold-complex {
+  background: linear-gradient(
+    90deg,
+    #f7d379 0%,
+    #e9be65 13.02%,
+    #f5e583 23.44%,
+    #c89447 38.8%,
+    #dcab57 46.06%,
+    #d6a453 54.62%,
+    #f7d87b 63.95%,
+    #a57331 73.55%,
+    #c18d42 83.41%,
+    #c08a41 100%
+  );
+
+}
+.gradientss{
+   color: linear-gradient(
+    90deg,
+    #f7d379 0%,
+    #e9be65 13.02%,
+    #f5e583 23.44%,
+    #c89447 38.8%,
+    #dcab57 46.06%,
+    #d6a453 54.62%,
+    #f7d87b 63.95%,
+    #a57331 73.55%,
+    #c18d42 83.41%,
+    #c08a41 100%
+  );
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll-up-continuous {
+  animation: scrollUp 20s linear infinite;
+}
