@@ -1,32 +1,34 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Home from './pages/Home';
-import Build from './pages/Build';
-import Migrate from './pages/Migrate';
-import Markiting from './pages/Markiting';
-import Optimize from './pages/Optimize';
-import Apps from './pages/Apps';
-import B2B from './pages/B2B';
-import POS from './pages/Pox';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { publicRoutes } from "./routes/routes-list/public-routes";
+import Header from "./components/Header";
 
-const App = () => {
+function App() {
   return (
-    <Router>
-      <Header />
-      
+    <Layout>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/build" element={<Build />} />
-        <Route path="/marketing" element={<Markiting />} />
-        <Route path="/migrate" element={<Migrate />} />
-        <Route path="/optimize" element={<Optimize />} />
-        <Route path="/apps" element={<Apps />} />
-        <Route path="/b2b" element={<B2B />} />
-        <Route path="/pos" element={<POS />} />
+        {publicRoutes.map(({ path, element: Element }) => (
+          <Route key={path} path={path} element={<Element />} />
+        ))}
+        {/* Fallback route agar page na mile */}
+        <Route path="*" element={<div className="text-white text-center pt-20">404 - Page Not Found</div>} />
       </Routes>
-    </Router>
+    </Layout>
   );
 }
+
+// Layout alignment for Dark Theme
+const Layout = ({ children }) => {
+  return (
+    <div className="">
+      <Header />
+      {/* Main Content: isko flex-grow diya taake footer (agar ho) hamesha niche rahe */}
+      <main className="flex-grow w-full">
+        {children}
+      </main>
+      {/* <Footer /> */}
+    </div>
+  );
+};
 
 export default App;

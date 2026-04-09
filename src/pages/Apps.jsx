@@ -4,32 +4,32 @@ import { Phone, Workflow, Puzzle, Sparkles, Shapes, ShoppingBag, ArrowRight } fr
 // --- DATA ---
 const servicesData = [
     {
-        icon: <Phone className="w-6 h-6 text-[#FFC107]" />,
+        icon: <Phone className="w-6 h-6 text-primary-accent" />,
         title: 'Mobile App Development',
         description: 'Boost sales and engage customers with a custom mobile app connected to your Shopify Store.',
     },
     {
-        icon: <Sparkles className="w-6 h-6 text-[#FFC107]" />,
+        icon: <Sparkles className="w-6 h-6 text-primary-accent" />,
         title: 'AI Agents & Shopify AI',
         description: 'Automate tasks with AI agents, enhance customer experiences, and gain insights with Shopify AI.',
     },
     {
-        icon: <Workflow className="w-6 h-6 text-[#FFC107]" />,
+        icon: <Workflow className="w-6 h-6 text-primary-accent" />,
         title: 'Workflow Automation',
         description: 'Streamlining UI, API, and performance testing with automation for flawless experiences.',
     },
     {
-        icon: <Puzzle className="w-6 h-6 text-[#FFC107]" />,
+        icon: <Puzzle className="w-6 h-6 text-primary-accent" />,
         title: 'App Integrations',
         description: 'Integrate any Shopify App to your Shopify store, we help with setup, configuration, implementation and o...',
     },
     {
-        icon: <Phone className="w-6 h-6 text-[#FFC107]" />,
+        icon: <Phone className="w-6 h-6 text-primary-accent" />,
         title: 'Mobile App Development',
         description: 'Boost sales and engage customers with a custom mobile app connected to your Shopify Store.',
     },
     {
-        icon: <Sparkles className="w-6 h-6 text-[#FFC107]" />,
+        icon: <Sparkles className="w-6 h-6 text-primary-accent" />,
         title: 'AI Agents & Shopify AI',
         description: 'Automate tasks with AI agents, enhance customer experiences, and gain insights with Shopify AI.',
     },
@@ -147,7 +147,7 @@ const Apps = () => {
 
                         {/* 4. CTA BUTTON */}
                         <div className="relative z-30 flex h-full items-end justify-center p-6 sm:p-10 lg:p-12">
-                            <button className="flex items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-5 text-base sm:text-lg font-bold bg-white text-black rounded-full shadow-xl hover:bg-gray-100 transition-all transform group-hover:scale-105 active:scale-95">
+                            <button className="flex items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto px-8 sm:px-12 py-4 sm:py-5 text-base sm:text-lg font-bold bg-white text-black rounded-full shadow-xl hover:bg-gray-100 ">
                                 <span className="whitespace-nowrap">Request App Quote</span>
                                 <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
                             </button>

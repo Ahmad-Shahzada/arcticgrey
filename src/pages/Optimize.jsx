@@ -3,22 +3,22 @@ import { FileSearch, Gamepad2, ShoppingCart, BarChart3, Monitor, Zap, MoveRight 
 
 const leftServices = [
   {
-    icon: <FileSearch className="w-7 h-7 text-[#FFC107]" />,
+    icon: <FileSearch className="w-7 h-7 text-primary-accent" />,
     title: 'Home/Collection/Product Page Audits',
     description: 'A data-driven redesign that boosted conversions by up to 30%, and shine through every click.',
   },
   {
-    icon: <Gamepad2 className="w-7 h-7 text-[#FFC107]" />,
+    icon: <Gamepad2 className="w-7 h-7 text-primary-accent" />,
     title: 'Gamify Your Cart Drawer',
     description: 'Revitalize your Shopify store with a cart drawer that accelerates sales and delights with unique incentives.',
   },
   {
-    icon: <ShoppingCart className="w-7 h-7 text-[#FFC107]" />,
+    icon: <ShoppingCart className="w-7 h-7 text-primary-accent" />,
     title: 'Checkout Optimizations',
     description: 'Get 2X faster checkout interactions and page transitions that increase your conversion rates.',
   },
   {
-    icon: <BarChart3 className="w-7 h-7 text-[#FFC107]" />,
+    icon: <BarChart3 className="w-7 h-7 text-primary-accent" />,
     title: 'A/B Testing & Deployment',
     description: 'Optimize through data-driven insights for superior performance and enhanced outcomes.',
   },
@@ -112,7 +112,7 @@ const Optimize = () => {
                 ].map((card, idx) => (
                   <div key={idx} className="bg-black/60 p-4 sm:p-5 rounded-[14px] max-w-md border border-white/20 backdrop-blur-md">
                     <div className="mb-2 sm:mb-4">
-                      {React.cloneElement(card.icon, { className: "w-6 h-6 sm:w-7 h-7 text-[#FFC107]" })}
+                      {React.cloneElement(card.icon, { className: "w-6 h-6 sm:w-7 h-7 text-primary-accent" })}
                     </div>
                     <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2 text-white">{card.title}</h3>
                     <p className="text-gray-200 text-xs sm:text-sm leading-relaxed">
@@ -134,7 +134,7 @@ const Optimize = () => {
               <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_60px_sm:shadow-[inset_0_0_100px_rgba(0,0,0,1)]" />
               
               <div className="relative z-20 flex h-full items-center justify-center sm:justify-end p-6 sm:p-12 sm:pr-16">
-                <button className="flex items-center gap-2 sm:gap-3 bg-black text-white border-2 border-[#FFC107] px-6 sm:px-10 py-3 sm:py-4 rounded-full text-sm sm:text-lg font-bold hover:bg-[#FFC107] hover:text-black transition-all duration-300 shadow-xl active:scale-95 whitespace-nowrap">
+                <button className="flex items-center gap-2 sm:gap-3 bg-black text-white border-2 border-primary-soft px-6 sm:px-10 py-3 sm:py-4 rounded-full text-sm sm:text-lg font-bold hover:bg-[#FFC107] hover:text-black transition-all duration-300 shadow-xl active:scale-95 whitespace-nowrap">
                   Claim Free Audit
                   <MoveRight className="w-4 h-4 sm:w-5 h-5" />
                 </button>

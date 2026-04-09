@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicesShowcase from '../components/ServicesShowcase'
+import ServicesShowcase from './components/ServicesShowcase'
 
 const Build = () => {
   return (

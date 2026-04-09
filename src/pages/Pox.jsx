@@ -7,7 +7,7 @@ import {
     Users,
     MoveRight
 } from 'lucide-react';
-import ShowcaseSection from '../components/Showcase';
+import ShowcaseSection from './components/Showcase';
 
 const POS = () => {
     return (
@@ -17,17 +17,17 @@ const POS = () => {
                 {/* --- COLUMN 1: LEFT SIDE LIST --- */}
                 <div className="lg:col-span-4 flex flex-col gap-12 py-8 pr-5 pl-8">
                     <ServiceItem
-                        icon={<ArrowLeftRight className="text-yellow-600" size={24} />}
+                        icon={<ArrowLeftRight className="text-primary-accent" size={24} />}
                         title="POS Migrations to Shopify"
                         desc="Specializes in seamless, virtual Shopify POS setups that integrate your brick-and-mortar with e-commerce..."
                     />
                     <ServiceItem
-                        icon={<Shapes className="text-yellow-600" size={24} />}
+                        icon={<Shapes className="text-primary-accent" size={24} />}
                         title="Custom POS Apps & Optimizations"
                         desc="Build a custom Shopify POS app to optimize face-to-face transactions with your unique business processes..."
                     />
                     <ServiceItem
-                        icon={<Box className="text-yellow-600" size={24} />}
+                        icon={<Box className="text-primary-accent" size={24} />}
                         title="Inventory/Order Sync Across Channels"
                         desc="Shopify offers nonstop innovation and unmatched interoperability for simple unified retail."
                     />
@@ -37,7 +37,7 @@ const POS = () => {
                 <div className="lg:col-span-4 flex flex-col gap-6 border-2 border-white/10 rounded-[14px] p-4">
                     {/* Top Card */}
                     <div className="bg-[#232323] border border-white/5 rounded-[14px] p-5 flex-1">
-                        <Tablet className="text-yellow-600 mb-6" size={28} />
+                        <Tablet className="text-primary-accent mb-6" size={28} />
                         <h3 className="text-lg font-bold mb-3">POS System Integration</h3>
                         <p className="text-zinc-400 text-sm leading-relaxed">
                             Our end-to-end service draws on Shopify's migration guides, positioning resources, and best practices.
@@ -46,7 +46,7 @@ const POS = () => {
 
                     {/* Bottom Card */}
                     <div className="bg-[#232323] border border-white/5 rounded-[14px] p-5 flex-1">
-                        <Users className="text-yellow-600 mb-6" size={28} />
+                        <Users className="text-primary-accent mb-6" size={28} />
                         <h3 className="text-lg font-bold mb-3">Unified D2C/B2B/POS Experiences</h3>
                         <p className="text-zinc-400 text-sm leading-relaxed">
                             Shopify POS delivers 22% lower total cost of ownership vs. competitors, per independent research.
@@ -81,7 +81,7 @@ const POS = () => {
                     </div>
 
                     {/* Request Demo Button with Gold Border */}
-                    <button className="group/btn relative inline-flex items-center gap-3 px-10 py-4 bg-black rounded-full border-2 border-yellow-500 hover:border-yellow-500 transition-all duration-300">
+                    <button className="group/btn relative inline-flex items-center gap-3 px-10 py-4 bg-black rounded-full border-2 border-primary-soft transition-all duration-300">
                         <span className="text-white font-semibold">Request POS Demo</span>
                         <MoveRight className="w-5 h-5 text-white transition-transform group-hover/btn:translate-x-1" />
 
@@ -91,7 +91,7 @@ const POS = () => {
                 </div>
 
             </div>
-            <ShowcaseSection/>
+            <ShowcaseSection />
         </div>
     );
 };

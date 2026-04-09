@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import URLS from '../config/urls.config';
 
 // Sample data for the services grid
 const services = [
@@ -62,7 +64,7 @@ const services = [
     title: "New Store Development",
     desc: "Complete your Shopify design & development tasks quickly with Bulk Hours.",
     icon: (
-      <img src="/public/images/migrate_8.svg" alt="" />
+      <img src="/public/images/migrate_8.svg" className="text-primary-accent" alt="" />
     ),
     highlighted: false,
   },
@@ -121,7 +123,7 @@ export default function Migrate() {
             {/* Services Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-8">
               {services.map((service, idx) => (
-                <div
+                <Link to={URLS.SERVICE_PAGES.MIGRATE_1}
                   key={idx}
                   className={`flex flex-col p-6 rounded-2xl cursor-pointer transition-all ${service.highlighted
                     ? 'bg-gradient-to-br from-[#1a1710] to-[#0a0a0a] border border-[#d4af37]/20 shadow-[0_0_30px_rgba(212,175,55,0.05)]'
@@ -133,7 +135,7 @@ export default function Migrate() {
                   <p className="text-[#888888] text-sm font-medium leading-tight">
                     {service.desc}
                   </p>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -147,7 +149,7 @@ export default function Migrate() {
             <div className="relative z-30 flex flex-col border border-white/20 py-5 rounded-xl items-center pt-8 px-6 gap-4 bg-[#050505]">
               {/* Box 1: Shopify Test Drive */}
               <div className="w-full bg-[#0d0d0d] border border-white/10 rounded-2xl p-6 shadow-xl">
-                <div className="text-[#e8b959] mb-4">
+                <div className="text-primary-accent mb-4">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
                   </svg>
@@ -160,7 +162,7 @@ export default function Migrate() {
 
               {/* Box 2: 8-Phase Migration Protocol */}
               <div className="w-full bg-[#0d0d0d] border border-white/10 rounded-2xl p-6 shadow-xl">
-                <div className="text-[#e8b959] mb-4">
+                <div className="text-primary-accent mb-4">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M7 16l-4-4 4-4M17 8l4 4-4 4M3 12h18" />
                   </svg>
