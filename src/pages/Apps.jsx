@@ -1,5 +1,7 @@
 import React from 'react';
 import { Phone, Workflow, Puzzle, Sparkles, Shapes, ShoppingBag, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import URLS from '../config/urls.config';
 
 // --- DATA ---
 const servicesData = [
@@ -82,13 +84,13 @@ const Apps = () => {
                     {/* --- LEFT SECTION --- */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 px-5">
                         {servicesData.slice(0, 6).map((service, index) => (
-                            <div key={index} className="flex flex-col gap-3 group">
+                            <Link to={URLS.SERVICE_PAGES.APPS_1} key={index} className="flex flex-col gap-3 group">
                                 <div className="">
                                     {service.icon}
                                 </div>
                                 <h3 className="text-xl font-semibold tracking-tight">{service.title}</h3>
                                 <p className="text-gray-400 text-sm leading-relaxed">{service.description}</p>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                     <div className="relative group overflow-hidden rounded-[14px] border border-gray-800 bg-black h-[500px] shadow-2xl">

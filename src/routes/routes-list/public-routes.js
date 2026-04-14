@@ -7,6 +7,8 @@ import Migrate from "../../pages/Migrate";
 import Optimize from "../../pages/Optimize";
 import POS from "../../pages/Pox";
 import Migrate_1 from "../../pages/service_detail/Migrate_1";
+import Optimize_1 from "../../pages/service_detail/Optimize_1";
+import Apps_1 from "../../pages/service_detail/Apps_1";
 
 export const publicRoutes = [
   {
@@ -44,5 +46,18 @@ export const publicRoutes = [
   {
     path: "/pages/migrate_1",
     element: Migrate_1,
+  },
+   {
+    path: "/marketing",
+    element: Home,
+  },
+   {
+    path: "/pages/optimize_1",
+    element: Optimize_1,
+  },
+  
+   {
+    path: "/pages/apps_1",
+    element: Apps_1,
   },
 ];

@@ -1,5 +1,7 @@
 import React from 'react';
 import { FileSearch, Gamepad2, ShoppingCart, BarChart3, Monitor, Zap, MoveRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import URLS from '../config/urls.config';
 
 const leftServices = [
   {
@@ -54,15 +56,15 @@ const Optimize = () => {
           {/* Switched to a 2-column grid on tablets (md) and 1-column on mobile/desktop */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8 md:gap-10 lg:gap-12 px-2 sm:px-4 lg:px-0 lg:pl-10">
             {leftServices.map((service, index) => (
-              <div key={index} className="flex flex-col gap-2 group">
-                <div className="transition-transform duration-300 group-hover:scale-110">
+              <Link to={URLS.SERVICE_PAGES.OPTIMIZE_1} key={index} className="flex flex-col gap-2 cursor-pointer group">
+                <div className="">
                   {service.icon}
                 </div>
                 <h3 className="text-base sm:text-lg font-bold tracking-tight">{service.title}</h3>
                 <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-sm">
                   {service.description}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
 

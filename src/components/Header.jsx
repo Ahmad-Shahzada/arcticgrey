@@ -9,15 +9,24 @@ export default function Header() {
   const navItems = ['Build', 'Migrate', 'Optimize', 'Apps', 'B2B', 'POS', 'Marketing'];
 
   return (
-    <div className="sticky top-0 z-50 px-3 pt-3 md:px-5 md:pt-6 w-full">
+    <div className="sticky bg-light-bg top-0 z-50 px-3 pt-3 md:px-5 md:pt-6 w-full">
       <header className="bg-[#0A0A0A] text-white rounded-t-[18px] shadow-2xl relative border-b border-white/5">
         <div className="flex items-center justify-between px-6 md:px-14 py-[20px]">
           {/* Left: Logo */}
-          <div className="flex items-center font-semibold tracking-wide shrink-0">
-            <Link to="/">
-              <img src="/images/lock-main-logo.webp" className="w-[200px]" alt="Logo" />
+          <div className="flex shrink-0 items-center">
+            <Link to="/" className="group inline-flex items-center gap-3">
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-accent text-[18px] font-black leading-none text-white shadow-[0_8px_24px_rgba(0,0,0,0.12)] transition-all duration-300 group-hover:scale-105 group-hover:rounded-[16px]">
+                W
+              </span>
+
+              <span className="relative text-[32px] font-black uppercase leading-none tracking-[-0.06em] text-primary-accent">
+                Wixpa
+                <span className="absolute -bottom-1 left-0 h-[3px] w-full rounded-full bg-primary-accent/10 transition duration-300 group-hover:bg-[#0f8a78]/20" />
+              </span>
             </Link>
           </div>
+
+
 
           {/* Center: Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-[30px] xl:gap-[43px]">
@@ -38,9 +47,9 @@ export default function Header() {
                   style={
                     isActive
                       ? {
-                          borderImageSource: 'var(--light-gradient)',
-                          borderImageSlice: 1,
-                        }
+                        borderImageSource: 'var(--light-gradient)',
+                        borderImageSlice: 1,
+                      }
                       : {}
                   }
                 >
@@ -141,11 +150,10 @@ export default function Header() {
                     key={item}
                     to={path}
                     onClick={() => setIsOpen(false)}
-                    className={`text-lg font-medium transition-colors ${
-                      isActive
-                        ? 'text-primary-accent'
-                        : 'text-white hover:text-primary-accent'
-                    }`}
+                    className={`text-lg font-medium transition-colors ${isActive
+                      ? 'text-primary-accent'
+                      : 'text-white hover:text-primary-accent'
+                      }`}
                   >
                     {item}
                   </Link>
