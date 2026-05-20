@@ -3,6 +3,9 @@ import Apps_hero from '../components/Apps_hero'
 import TrustedBrandsMarquee from '../components/TrustedBrandsMarquee'
 import WhyWorkWithUs from '../components/WhyWorkWithUs'
 import PrivateAppsSection from '../components/PrivateAppsSection'
+import ProcessSlider from '../components/ProcessSlider'
+import FAQSection from '../components/FAQSection'
+import Footer from '../../components/Footer'
 
 const Apps_1 = () => {
   return (
@@ -11,6 +14,9 @@ const Apps_1 = () => {
       <TrustedBrandsMarquee/>
       <WhyWorkWithUs/>
       <PrivateAppsSection/>
+      <ProcessSlider/>
+      <FAQSection/>
+      <Footer/>
     </div>
   )
 }
